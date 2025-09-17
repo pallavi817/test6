@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('SCM Checkout') {
             steps {
-                git branch: 'kit', url: 'https://github.com/pallavi817/java-docker-build-tutorial.git'
+                git branch: 'kit', url: 'https://github.com/pallavi817/test6.git'
             }
         }
 
