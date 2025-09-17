@@ -2,13 +2,12 @@ FROM node:16
 
 WORKDIR /app
 
-COPY package*.json ./
-RUN npm install
-
+# Copy all app files
 COPY . .
 
 EXPOSE 3000
 
-CMD ["npm", "start"]
+CMD ["node", "index.js"]
+
 
 
