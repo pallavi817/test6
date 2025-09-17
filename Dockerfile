@@ -2,12 +2,15 @@ FROM node:16
 
 WORKDIR /app
 
-COPY package*.json ./
+# Copy only the package files from the subfolder
+COPY nodeapp/package*.json ./
 RUN npm install
 
-COPY . .
+# Copy the rest of the subfolder contents
+COPY nodeapp/ ./
 
 EXPOSE 3000
 
 CMD ["npm", "start"]
+
 
