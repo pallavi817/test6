@@ -14,7 +14,7 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t ntr1505/nodeapp:${BUILD_NUMBER} .'
+                sh 'sudo docker build -t ntr1505/nodeapp:${BUILD_NUMBER} .'
             }
         }
 
