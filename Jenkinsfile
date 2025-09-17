@@ -26,7 +26,7 @@ pipeline {
 
         stage('Push Image') {
             steps {
-                sh 'docker push ntr1505/nodeapp:${BUILD_NUMBER}'
+                sh 'sudo docker push ntr1505/nodeapp:${BUILD_NUMBER}'
             }
         }
     }
